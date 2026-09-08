@@ -2,6 +2,8 @@ section .text
 global _start
 _start:
     
+
+    cmp qword [rsp], 2
     mov rsi, [rsp+16]
     
     mov al, [rsi]
